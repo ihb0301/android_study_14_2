@@ -53,6 +53,8 @@ https://app.swaggerhub.com/apis-docs/SEONGHWI/alom/1.0.0
 
 스웨거 열면 오른쪽 위에 Authorize 자물쇠 버튼 누르면 key 입력하는곳 나옵니다. 거기에 키 붙여넣기 하시고 인증하시면 됩니다. (브라우저 열때마다 해야함.) 
 
+그리고 사용해보고 싶은 api에 try it out 누른 후, execute하시면 됩니당
+
 api 키는 카톡으로 공유합니다. 꼭 깃에 올릴때 local.properties 안에 키 숨겨서 올려주세요 (아니면 제 돈 나가요 ㅠㅠ)
 
 레트로핏 호출부 or 레트로핏 빌더에 **Interceptor 추가 (추천)에서 (“apikey”, “keykeykeyekykey”)이런식으로 추가하시면 됩니다**
