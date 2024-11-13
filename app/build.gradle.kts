@@ -7,6 +7,8 @@ android {
     namespace = "com.alom.androidstudy2"
     compileSdk = 34
 
+    viewBinding.isEnabled = true
+
     defaultConfig {
         applicationId = "com.alom.androidstudy2"
         minSdk = 26
