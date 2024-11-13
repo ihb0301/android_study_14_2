@@ -44,6 +44,7 @@ fun getApiKey(propertyKey: String): String {
 
 dependencies {
     implementation("com.android.volley:volley:1.2.1")
+    implementation(libs.glide)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
