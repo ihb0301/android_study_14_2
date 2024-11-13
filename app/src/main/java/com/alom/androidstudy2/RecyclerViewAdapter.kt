@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.alom.androidstudy2.databinding.MainRecyclerviewItemBinding
+import com.bumptech.glide.Glide
 
 class RecyclerViewAdapter(): ListAdapter<ItemData, RecyclerViewAdapter.ViewHolder>(diffUtil) {
     override fun onCreateViewHolder(
@@ -36,6 +37,9 @@ class RecyclerViewAdapter(): ListAdapter<ItemData, RecyclerViewAdapter.ViewHolde
             binding.itemTitle.text = item.title
             binding.itemPrice.text = item.price
             binding.itemTime.text = item.time
+            Glide.with(binding.root.context)
+                .load(item.image_url)
+                .into(binding.itemImage)
         }
     }
 }
